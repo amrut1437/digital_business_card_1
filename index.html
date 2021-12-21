@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>E Business Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" integrity="sha512-XJ3ntWHl40opEiE+6dGhfK9NAKOCELrpjiBRQKtu6uJf9Pli8XY+Hikp7rlFzY4ElLSFtzjx9GGgHql7PLSeog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+    
+    *{
+      font-family: 'Poppins', sans-serif;
+    }
+    body{
+      background: #ECEFF8;
+    }
+    .avatar{
+      border-radius: 80px;
+      border:2px solid white;
+    }
+    .brand-name{
+      color: white;
+    }
+    .brand-description{
+      font-size: 15px !important;
+      color: white;
+      margin-top: -5px;
+    }
+    .social-menu{
+      padding: 15px;
+      background: white;
+      width: 100%;
+      text-align: center;
+      border-radius: 15px;
+      margin: 5px;
+      font-size: 10px;
+    }
+    .social-menu .fa{
+      font-size: 30px;
+      /*font-weight: bold;*/
+      padding-bottom: 8px;
+    }
+    .social-menu:hover{
+      background: rgba(140,0,255,1);
+background: -moz-linear-gradient(-45deg, rgba(140,0,255,1) 0%, rgba(255,0,132,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(140,0,255,1)), color-stop(100%, rgba(255,0,132,1)));
+background: -webkit-linear-gradient(-45deg, rgba(140,0,255,1) 0%, rgba(255,0,132,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(140,0,255,1) 0%, rgba(255,0,132,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(140,0,255,1) 0%, rgba(255,0,132,1) 100%);
+background: linear-gradient(135deg, rgba(140,0,255,1) 0%, rgba(255,0,132,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c00ff', endColorstr='#ff0084', GradientType=1 );
+color: white;
+    }
+    .pb-50{
+      padding-bottom: 50px;
+    }
+    .pt-50{
+      padding-top: 50px;
+    }
+    .pb-30{
+      padding-bottom: 30px;
+    }
+    .pt-30{
+      padding-top: 30px;
+    }
+    .button-style{
+      border-radius: 50px;
+      border: none;
+      padding: 10px 30px;
+      background:white;
+    }
+
+        .button-style-2{
+      border-radius: 50px;
+      border: none;
+      padding: 10px 30px;
+      background: rgba(140,0,255,1);
+background: -moz-linear-gradient(-45deg, rgba(140,0,255,1) 0%, rgba(255,0,132,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(140,0,255,1)), color-stop(100%, rgba(255,0,132,1)));
+background: -webkit-linear-gradient(-45deg, rgba(140,0,255,1) 0%, rgba(255,0,132,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(140,0,255,1) 0%, rgba(255,0,132,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(140,0,255,1) 0%, rgba(255,0,132,1) 100%);
+background: linear-gradient(135deg, rgba(140,0,255,1) 0%, rgba(255,0,132,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c00ff', endColorstr='#ff0084', GradientType=1 );
+color: white;
+    }
+
+    .button-style:hover{
+       background: rgba(140,0,255,1);
+background: -moz-linear-gradient(-45deg, rgba(140,0,255,1) 0%, rgba(255,0,132,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(140,0,255,1)), color-stop(100%, rgba(255,0,132,1)));
+background: -webkit-linear-gradient(-45deg, rgba(140,0,255,1) 0%, rgba(255,0,132,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(140,0,255,1) 0%, rgba(255,0,132,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(140,0,255,1) 0%, rgba(255,0,132,1) 100%);
+background: linear-gradient(135deg, rgba(140,0,255,1) 0%, rgba(255,0,132,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c00ff', endColorstr='#ff0084', GradientType=1 );
+color: white;
+    }
+    .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa {
+  padding: 10px;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 100%;
+}
+  </style>
+</head>
+<body>
+
+<div class="jumbotron" style="background: #322E78;">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 col-xs-12">
+    <div class="col-sm-4 col-xs-4 text-center">
+      <img src="images/avatar.png" class="avatar" width="100" height="100">
+
+    </div>
+    <div class="col-sm-8 col-xs-8">
+       <h2 class="brand-name">Sarah Moris</h2>
+       <p class="brand-description">Property Advisor</p>
+    </div>
+    
+  </div>
+  </div>
+</div>
+<div class="text-center">
+<img src="images/curve.png" width="100%" style="margin-bottom: -80px;">
+</div>
+</div>
+
+<!------------------------------------>
+
+<div class="container pb-30 pt-30">
+  <div class="row">
+    <div class="col-sm-12 col-xs-12">
+<!-- BRAND LOGO OR TITLE HERE -->
+      <div class="col-sm-8 col-xs-8"><h2><b>MODERN</b><br>Property</h2>
+
+      <button class="button-style" onclick="document.location='default.asp'"><b>Our</b> Projects ></button>
+</div>
+<!------------------------------>
+      <div class="col-sm-4 col-xs-4 text-center-middle">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-youtube"></a>
+      </div>
+</div>
+</div>
+</div>
+
+
+<!------------------------------------>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-xs-12">
+
+    <div class="col-sm-4 col-xs-4">
+    <div class="social-menu"><i class="fa fa-phone" aria-hidden="true"></i>
+      <br>Call us</div>
+    </div>
+
+    <div class="col-sm-4 col-xs-4">
+    <div class="social-menu"><i class="fa fa-whatsapp" aria-hidden="true"></i>
+<br>Whatsapp</div>
+    </div>
+
+    <div class="col-sm-4 col-xs-4">
+    <div class="social-menu"><i class="fa fa-phone" aria-hidden="true"></i><br>Email us</div>
+    </div>
+
+    <div class="col-sm-4 col-xs-4">
+    <div class="social-menu"><i class="fa fa-globe" aria-hidden="true"></i><br>Visit Websie</div>
+    </div>
+
+    <div class="col-sm-4 col-xs-4">
+    <div class="social-menu"><i class="fa fa-download" aria-hidden="true"></i><br>Save Contact</div>
+    </div>
+
+    <div class="col-sm-4 col-xs-4">
+    <div class="social-menu"><i class="fa fa-heart" aria-hidden="true"></i><br>Our Reviews</div>
+    </div>
+    
+  </div>
+  </div>
+</div>
+
+<!------------------------------>
+
+<!------------------------------>
+<div class="container pt-30 pb-50">
+  <div class="row">
+    <div class="col-sm-12 col-xs-12">
+
+    <div class="col-sm-6 col-xs-6">
+      <h4>OUR LOCATION</h4>
+      <p style="font-weight: 300;">
+        200, Lorem Ipsum is, simply dummy text
+        <p>
+    </div>
+
+    <div class="col-sm-6 col-xs-6">
+      <button class="button-style-2" onclick="document.location='default.asp'">BUY/SELL </button>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<!------------------------------>
+
+</body>
+</html>
